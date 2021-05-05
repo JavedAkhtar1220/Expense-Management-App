@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Css  */
+
+.header {
+    height: 10vh;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Menu Css  */
+
+.leftMenu {
+    width: 20%;
+    height: 90vh;
+    background-color: #292929;
+}
+
+.btn_menu {
+    line-height: 6vh;
+}
+
+.menu_link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+    transition: border-left 0.5s;
+}
+
+.menu_link:hover {
+    background-color: rgb(146, 146, 11);
+    border-left: 5px solid white;
+    color: white;
+}
+
+.active_link {
+    background-color: rgb(146, 146, 11);
+    border-left: 5px solid white;
+    color: white;
+}
+
+/* Pages Content CSS */
+
+.content {
+    width: 100%;
+}
+
+.head {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Select Css  */
+
+.select_items {
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.bgColor {
+    background: -webkit-gradient(linear, left bottom, right top, from(#fc2c77), to(#6c4079));
+    background: -webkit-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+    background: -moz-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+    background: -o-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+    background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+}
+
+.signup_title {
+    font-size: 24px;
+    color: #525252;
+    font-weight: 400;
+    /* margin-bottom: 40px; */
+}
+
+/* InputField Style  */
+
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 0px 50px 0px 20px;
+}
+
+.inpStyle {
+    line-height: 50px;
+    background: #fafafa;
+    /* -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08); */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+/* Buttons Style  */
+
+.btn_signup {
+    width: 100%;
+    line-height: 50px;
+    padding: 0 50px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #1d0033;
+}
+
+.disbtn_signup {
+    width: 100%;
+    line-height: 50px;
+    padding: 0 50px;
+    background-color: #1d0033;
+    color: white;
+    outline: none !important;
+    border: none;
+    cursor: no-drop !important;
+}
+
+.btn_custom {
+    width: 100%;
+    line-height: 60px;
+    border-radius: 20px;
+    outline: none !important;
+    /* background-color: "#f8faf4"; */
+    opacity: 0.9;
+}
+
+.btn_custom:hover {
+    border: 1px solid #bfbfbf !important;
+    opacity: 1;
+}
+
+.btn_social {
+    width: 100%;
+    line-height: 50px;
+    border: none;
+    color: white;
+    opacity: 0.9;
+}
+
+.btn_social:hover {
+    opacity: 1;
+}
+
+.btn_back {
+    background: transparent;
+    border: none;
+    outline: none !important;
+}
+
+.btn_changes {
+    width: 70px;
+    line-height: 30px;
+    margin-right: 10px;
+    border: none;
+    opacity: 0.9;
+}
+
+.btn_changes:hover {
+    opacity: 1;
+}
+
+/* Icons  */
+
+.back_icon {
+    transform: rotate(270deg);
+}
+
+.icon {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+
+.separator {
+    display: flex;
+    /* color: white !important; */
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #808080;
+}
+
+.separator::before {
+    margin-right: 20px;
+}
+
+.separator::after {
+    margin-left: 20px;
+}
+
+/* Table  */
+
+.table_content {
+    height: 70vh;
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 787px) {
+    .res_content {
+        display: none;
+    }
+}
